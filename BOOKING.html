@@ -1,0 +1,166 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- external css-->
+    <link rel = "stylesheet" type = "text/css" href = "css/navigationBar.css">
+	<link rel = "stylesheet" type = "text/css" href = "css/home.css">
+	<link rel = "stylesheet" type = "text/css" href = "css/2.css">
+	
+
+</head>
+<body>
+
+<div class="header" style="background-image:url('images/header/backg.jpg');">
+		<img class="logo" src = "images/header/logo.png" width="400" height = "200" alt="logo">
+		
+		<button class="button1"> <a href="Registation.html">Sign Up</a></button>
+		<button class="button1"> <a href="sign in.html">Sign in</a></button>
+		
+		</div>
+
+
+<ul>
+  <li><a href="home.html">HOME</a></li>
+  <li><a href="BOOKING.html">BOOKING</a></li>
+   <li><a href="contactUs.html">CONTACT US</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">MORE</a>
+    <div class="dropdown-content">
+      <a href="Manage.html">Manage Bookings</a>
+      <a href="Transport schedule.html">Transport Schedule</a>
+      <a href="findref.html">Career Opportunity</a>
+	  <a href="package.html">Packages</a>
+	  <a href="review.html">Reviews</a>
+	  <a href="About Us.html">About Us</a>
+    </div>
+  </li>
+</ul>
+
+
+<html>
+
+
+
+<div id="card">
+
+<div id="booking">
+	<h4> BOOKING TICKET </h4>
+</div>
+<br>
+<br>
+<div id="tick">
+
+<form>
+  <input type="radio" id="bus" name="travel" value="bus">
+  <label for="bus">BUS</label>
+  <input type="radio" id="train" name="travel" value="train">
+  <label for="train">TRAIN</label>
+  <input type="radio" id="flight" name="travel" value="flight">
+  <label for="flight">FLIGHT</label>
+</form>
+</div>
+
+
+<br>
+<form action="booktable.php"  method="POST">
+
+	<label for ="text" id="lebel" >From</label>
+	<input type="text" id="text" name= "from1" placeholder="Departure" />
+	<br><br>
+	<label for ="text" id="lebel" >To</label>
+	<input type="text" id="text" name="to1" placeholder="Arrival"/>
+	<br><br>
+	<label for ="text" id="lebel" >Depart</label>
+	<input type="date" id="text" name="depart" placeholder="12/May/2016"/>	
+	<br><br>
+	<label for ="text" id="lebel" >Return</label>
+	<input type="date" id="text" name="return1" placeholder="12/May/2016"/>
+	<br><br>
+	<label for ="text" id="lebel" >Class</label>
+	<input type="datalist" id="text" name="class1" placeholder="Economy"/>
+	<br><br>
+	<label for ="text" id="lebel" >Adults</label>
+	<input type="datalist" id="text" name="adults" placeholder="-"/>
+	<br><br>
+	<label for ="text" id="lebel" >Children</label>
+	<input type="datalist" id="text" name="children" placeholder="-"/>
+	<br><br>
+	<label for ="text" id="lebel" >Infants</label>
+	<input type="datalist" id="text" name="infants" placeholder="-"/>
+	
+	 <input type="submit" value="Continue to Boooking" id="btn" name="submit">
+
+<!--<button id="CONTINUE"> <a href="payment.html">PAYMENT</a></button>
+	  <button id="CONTINUE"> <a href="bookintable.php">SUBMIT</a></button>	-->
+</form>
+<br><br>
+
+
+<!--	<a href="bookintable.php" >Confirm Booking<input style="color:#ffffff;"  type="submit" id="CONTINUE" value="CONFIRM BOOKING"></a>
+ bookintable
+    <a href="payment.html" > Submit<input style="color:#ffffff;"   type="submit"  id="CONTINUE" name="Continue" value="PAYMENT"></a>
+-->
+     
+
+</div>
+
+<script>
+function myFunction() {
+  alert("retry!");
+}
+
+
+</script>
+
+
+
+
+
+</html>
+
+<br><br><br><br><br><br><br><br><br>
+	
+	
+	
+
+	
+	
+	<!--Java script-->
+
+  
+<div class="footer">
+<div id="linkAlign">
+  
+  <img src="images/Footer/QR.jpg" width=75 height=40% align="left" alt="QR">
+  <a href="https://paypal.com"><img src="images/Footer/payment.jpg" width=20% height=40% text-align="middle" alt="Credit cards">
+  	<a href="http://facebook.com"><img src="images/Footer/fb.png" alt="icon" width="50"  /></a>
+	  <a href="http://instagram.com"><img src="images/Footer/insta.png" alt="icon" width="50" /></a>
+		<a href="http://whatsapp.com"><img src="images/Footer/whatsapp.png" alt="icon" width="50"/></a>
+		  <a href="http://youtube.com"><img src="images/Footer/youtube.png" alt="icon" width="50" /></a>
+  
+   
+   <div align="right">
+	
+			<a href="#" class="footerButtons">Privacy Policy</a>
+			<a href="#" class="footerButtons">|  Terms & Conditions</a>
+			<a href="#" class="footerButtons">|  Contact Us </a>
+			<a href="#" class="footerButtons">|  Reviews </a>
+		 <p align="center" > copyright @ 2020 Mass Reservations</p>
+		</div>		
+
+
+  </div>
+
+  
+  
+</div>
+</div>
+</body> 
+</html>
+

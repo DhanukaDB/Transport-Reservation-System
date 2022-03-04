@@ -1,0 +1,151 @@
+
+<?php
+ require_once 'config.php'; ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Reviews</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- external css-->
+    <link rel = "stylesheet" type = "text/css" href = "css/navigationBar.css">
+	<link rel = "stylesheet" type = "text/css" href = "css/home.css">
+	<link rel = "stylesheet" type = "text/css" href = "css/review1.css"> 
+	
+	
+
+</head>
+<body>
+
+<div class="header" style="background-image:url('images/header/backg.jpg');">
+		<img class="logo" src = "images/header/logo.png" width="400" height = "200" alt="logo">
+		
+		<button class="button1"> <a href="Registation.html">Sign Up</a></button>
+		<button class="button1"> <a href="sign in.html">Sign in</a></button>
+		
+		</div>
+
+
+<ul>
+  <li><a href="home.html">HOME</a></li>
+  <li><a href="BOOKING.html">BOOKING</a></li>
+   <li><a href="contactUs.html">CONTACT US</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">MORE</a>
+    <div class="dropdown-content">
+      <a href="Manage.html">Manage Bookings</a>
+      <a href="Transport schedule.html">Transport Schedule</a>
+      <a href="findref.html">Career Opportunity</a>
+	  <a href="package.html">Packages</a>
+	  <a href="review.html">Reviews</a>
+	  <a href="About Us.html">About Us</a>
+    </div>
+  </li>
+</ul>
+</head>
+<br>
+<center>
+     <!-- review details-->
+	     <form action="addreview.php" method="POST" class="reviews">	
+		
+		<div class="review-details">
+		
+		
+		<h2>Reviewing</h2>
+		</br></br>
+	   <table>	
+		<tr>
+		<td> Name :</td> 
+		<td> <input type="text" id="name" name="name" placeholder="Name" required> </td>
+		
+		<td>  Contact Number : </td>
+		<td> <input type="text" id="phone" name="phone" placeholder="phone number" required></td>
+		</br>
+		</tr>
+		
+		
+		<td> Date : </td>
+		<td> <input type="Date" id="date" name="date"  > </td>
+		</tr>
+		
+		
+		<tr>
+		<td> Department : </td>
+		<td> <input type="text" id="department" name="department" placeholder="Department name"></td>
+		
+		<td> Review : </td>
+		<td> <textarea id="review" name="review" placeholder="Review" rows="5" cols="25"></textarea> </td></tr>
+
+	</table>
+	<input type="submit" id="submit" value="SUBMIT" name="submit" >
+	<a href="home.html"><input type ="button" id="cancel" value="CANCEL" ></a>
+		      
+	     </form >    
+		<style>
+.checked {
+  color: gold;
+}
+</style>
+         <br>
+         <table>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <tr><td> <a href="table.php" class="footerButtons">Recent Reviews</a> </td></tr>
+		 </table>
+<body>
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+
+</body>
+</html>
+	
+</center>
+<br>
+<br>
+<br>	
+
+	<!--Java script-->
+
+  
+<div class="footer">
+<div id="linkAlign">
+  
+  <img src="images/Footer/QR.jpg" width=90 height=40% align="left" alt="QR"/>
+  <a href="https://paypal.com"><img src="images/Footer/payment.jpg" width=20% height=40% align="right" alt="Credit cards"/></a>
+  	<a href="http://facebook.com"><img src="images/Footer/fb.png" alt="icon" width="50"  /></a>
+	  <a href="http://instagram.com"><img src="images/Footer/insta.png" alt="icon" width="50" /></a>
+		<a href="http://whatsapp.com"><img src="images/Footer/whatsapp.png" alt="icon" width="50"/></a>
+		  <a href="http://youtube.com"><img src="images/Footer/youtube.png" alt="icon" width="50" /></a>
+  
+   
+   <div align="right">
+	
+			<a href="#" class="footerButtons">Privacy Policy</a>
+			<a href="#" class="footerButtons">|  Terms & Conditions</a>
+			<a href="#" class="footerButtons">|  Contact Us </a>
+			<a href="#" class="footerButtons">|  Reviews </a>
+		 <p align="center" > © 2020 Mass Reservations</p>
+		</div>		
+
+
+  </div>
+
+  
+  
+</div>
+</div>
+</body> 
+</html>
+<?php
+//close connection
+mysqli_close($conn);
+?>

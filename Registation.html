@@ -1,0 +1,146 @@
+
+<?php
+ require_once 'config.php'; ?>
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- external css-->
+    <link rel = "stylesheet" type = "text/css" href = "css/navigationBar.css">
+	<link rel = "stylesheet" type = "text/css" href = "css/home.css">
+	<link rel = "stylesheet" type = "text/css" href = "css/1.css">
+	
+			<script src="JS/1.js"> </script>
+</head>
+<body>
+
+<div class="header" style="background-image:url('images/header/backg.jpg');">
+		<img class="logo" src = "images/header/logo.png" width="400" height = "200" alt="logo">
+		
+		<button class="button1"> <a href="Registation.html">Login</a></button>
+		<button class="button1"> <a href="sign in.html">Sign in</a></button>
+		
+		</div>
+
+
+<ul>
+  <li><a href="home.html">HOME</a></li>
+  <li><a href="BOOKING.html">BOOKING</a></li>
+   <li><a href="contactUs.html">CONTACT US</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">MORE</a>
+    <div class="dropdown-content">
+      <a href="Manage.html">Manage Bookings</a>
+      <a href="Transport schedule.html">Transport Schedule</a>
+      <a href="findref.html">Career Opportunity</a>
+	  <a href="package.html">Packages</a>
+	  <a href="review.html">Reviews</a>
+	  <a href="About Us.html">About Us</a>
+    </div>
+  </li>
+</ul>
+
+
+
+	<!--register Page-->
+
+
+
+<div id="card", >
+
+	<div class="register-switch">
+		<input type="radio" name="Register" id="P" class="register-switch-input" checked>
+		<label for="P" class="register-switch-label">PASSENGER ACCOUNT</label>
+		<input type="radio" name="Register" id= "D" class="register-switch-input">
+		<label for="D" class="register-switch-label">DRIVER ACCOUNT</label>
+	</div>
+	<form action="pregister.php" method="POST">	
+	<h2>Sign-up  </h2>
+	<h4> </h4>
+		
+	<label ID="Mobile" > Email Or Mobile Number  </label>
+   
+	<input type="text" id="text" name="user" placeholder="Email Or Mobile Number" required><br>
+	
+	<label ID="Mobile" > Password </label>
+	<input type="password" id="text" name = "password"  placeholder="Password" required><br>
+  
+  
+ <br>
+	<input style="color:#ffffff;" type="submit" id="CONTINUE" name="submit" value="CONTINUE"/>
+	
+ <br>
+ </form>
+ 
+    <label style="font-size: 11px; color:black; ">Or Signup With</label>
+	
+<br><br><br>
+	
+	
+	<input  type ="submit" id="facebook" name="Facebook" value=" Login in with Facebook"/>  
+	<input type="submit" onclick="myFunction()" id="google" name="submit" value=" Sign in with google"/>
+  
+  <br>
+  <br>
+  <br>
+  
+
+	<h6 id="privacy" >By proceeding, you agree to page Privacy, User Agreement and T&Cs </h6><br><br><br>
+</div>
+
+
+
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+	
+	
+	
+	<!--Java script-->
+
+  
+<div class="footer">
+<div id="linkAlign">
+  
+  <img src="images/Footer/QR.jpg" width=75 height=40% align="left" alt="QR">
+  <a href="https://paypal.com"><img src="images/Footer/payment.jpg" width=20% height=40% text-align="middle" alt="Credit cards">
+  	<a href="http://facebook.com"><img src="images/Footer/fb.png" alt="icon" width="50"  /></a>
+	  <a href="http://instagram.com"><img src="images/Footer/insta.png" alt="icon" width="50" /></a>
+		<a href="http://whatsapp.com"><img src="images/Footer/whatsapp.png" alt="icon" width="50"/></a>
+		  <a href="http://youtube.com"><img src="images/Footer/youtube.png" alt="icon" width="50" /></a>
+  
+   
+   <div align="right">
+	
+			<a href="#" class="footerButtons">Privacy Policy</a>
+			<a href="#" class="footerButtons">|  Terms & Conditions</a>
+			<a href="#" class="footerButtons">|  Contact Us </a>
+			<a href="#" class="footerButtons">|  Reviews </a>
+		 <p align="center" > copyright @ 2020 Mass Reservations</p>
+		</div>		
+
+
+  </div>
+
+  
+  
+</div>
+</div>
+</body> 
+</html>
+
+<?php
+//close connection
+mysqli_close($conn);
+
+?>
